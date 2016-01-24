@@ -9,9 +9,9 @@
 using namespace std;
 
 int merge_count(int arr[], int temp[], int left, int mid, int right){
-    int i = left;
-    int j = mid;
-    int k = left;
+    int i = left; // left
+    int j = mid;  // mid
+    int k = left; // right
     
     int count = 0;
     
@@ -22,7 +22,7 @@ int merge_count(int arr[], int temp[], int left, int mid, int right){
             i++;
         } else {
             temp[k] = arr[j];
-            count = count + mid - i;
+            count = count + mid - i; // left greater than right, add count
             k++;
             j++;
         }
