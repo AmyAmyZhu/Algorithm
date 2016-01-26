@@ -77,6 +77,11 @@ int main(){
     }
     
     cout << merge_sort(arr, temp, 0, size-1) << endl;
+    
+    for (int i = 0 ; i < size; i++) {
+        cout << arr[i] << " ";
+    }
     delete[] arr;
+    delete[] temp;
 }
 
